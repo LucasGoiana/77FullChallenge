@@ -11,6 +11,7 @@ LUCAS GOIANA MALICIA<br>
 - PHP =>7.1
 - MYSQL
 - Lumen
+- Composer
 - Node
 - NPM
 - React
