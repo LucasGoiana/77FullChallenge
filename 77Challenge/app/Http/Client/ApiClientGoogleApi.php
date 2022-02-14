@@ -28,7 +28,7 @@ class ApiClientGoogleApi
     {
         $httpClient = new Client();
 
-        $provider = new GoogleMaps($httpClient, null, 'AIzaSyD26b35IaSn0xrl_UhNex1i2Ez8J37ZJKY');
+        $provider = new GoogleMaps($httpClient, null, Constants::GOOGLE_KEY);
         $geocoder = new StatefulGeocoder($provider, 'pt-br');
         $result = $geocoder->geocodeQuery(GeocodeQuery::create($data->logradouro.",".$data->bairro.','.$data->localidade.','.$data->uf.','.$data->cep));
 

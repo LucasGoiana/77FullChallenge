@@ -1,21 +1,59 @@
-# Lumen PHP Framework
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+<h1 align="center"> 77Sol Challenge</h1>
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
 
-## Official Documentation
+###  Desenvolvedor<Br>
+LUCAS GOIANA MALICIA<br>
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+# Como utilizar o backend
 
-## Security Vulnerabilities
+### Pré-requisitos
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+- PHP =>7.1.3
+- MYSQL
+- Lumen
+- Postman
+- Composer
+- Executar o passo a passo a seguir.
 
-## License
+ <p> 1 - Clone ou Extraia o projeto em um diretório de sua preferência:</p>
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    "diretório de sua preferencia"
+    git clone https://github.com/LucasGoiana/77FullChallenge.git
+
+ou
+
+    "diretório de sua preferencia"
+    unzip file.zip
+
+<p> 2 - Entre na Pasta do Projeto:</p>
+
+    cd 77Challenge
+
+<p> 3 - No terminal execute o comando:</p>
+
+    composer install
+
+<p> 4 - No terminal execute o comando:</p>
+
+    cp .env.example .env
+
+<p> 5 - No arquivo .env editar as Variáveis de conexão do mysql:</p>
+
+<p> 6 - No terminal execute o comando:</p>
+
+    php artisan migrate
+
+<p> 7 - No terminal execute o comando:</p>
+
+    php artisan db:seed --class=UsersSeeder
+
+> <b>Obs.:</b> Para fins de facilitar os testes deixo um seed e um usuario criados com o <br><strong>Email:</strong> lucasgoianam@77Sol.com.br <br><strong>Senha:</strong> 77Sol  
+
+<p> 8 - No terminal execute o comando para gerar o HASH JWT:</p>
+
+    php artisan jwt:secret
+<p> 9 - Por último precismos servir nossa aplicação com o comando:</p>
+
+    php -S localhost:8000 -t public
+
