@@ -27,7 +27,7 @@ O Software foi dividido em duas camadas:
 
 - **77FrontChallenge** - Contempla o Front-End(React).
 
-Cada diretório mencionado acima possui uma documentação no arquivo readme.md, essa documentação possui o passo a passo da execução do aplicativo e da api. E no diretório raiz deixo as collenctions necessárias para realizar os testes.
+Cada diretório mencionado acima possui uma documentação no arquivo readme.md, essa documentação possui o passo a passo da execução do aplicativo e da api. E no diretório raiz deixo as collentions necessárias para realizar os testes.
 
 > <b>Obs.:</b> O ViaCEP não contempla todos os ceps. Isso pode ocasionar falhas nas buscas durante os testes, para resolver isso, por favor, utilize mais de um cep.
 
